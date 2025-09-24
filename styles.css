@@ -8,8 +8,8 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #2F4F2F;
+    background-color: #F5F5DC;
     overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(245, 245, 220, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -46,7 +46,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #000;
+    color: #2F4F2F;
 }
 
 nav ul {
@@ -60,11 +60,12 @@ nav ul li {
 
 nav ul li a {
     font-weight: 500;
+    color: #556B2F;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #666;
+    color: #2F4F2F;
 }
 
 /* Hero Section */
@@ -73,7 +74,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    background: linear-gradient(135deg, #F5F5DC 0%, #D4EDDA 50%, #C3E6CB 100%);
     text-align: center;
 }
 
@@ -94,8 +95,8 @@ nav ul li a:hover {
 .cta-button {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #000;
-    color: #fff;
+    background-color: #2F4F2F;
+    color: #F5F5DC;
     border-radius: 0;
     transition: all 0.3s ease;
     opacity: 0;
@@ -103,7 +104,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #333;
+    background-color: #1B3A1B;
     transform: translateY(-2px);
 }
 
@@ -140,7 +141,7 @@ h2::after {
     transform: translateX(-50%);
     width: 50px;
     height: 2px;
-    background-color: #000;
+    background-color: #2F4F2F;
 }
 
 /* About Section */
@@ -200,21 +201,22 @@ form {
 input, textarea {
     margin-bottom: 1rem;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #C3E6CB;
     border-radius: 0;
     font-family: inherit;
     transition: border-color 0.3s ease;
+    background-color: #F5F5DC;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #000;
+    border-color: #2F4F2F;
 }
 
 button[type="submit"] {
     padding: 1rem;
-    background-color: #000;
-    color: #fff;
+    background-color: #2F4F2F;
+    color: #F5F5DC;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -223,14 +225,14 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #1B3A1B;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #f5f5f5;
+    background-color: #D4EDDA;
     font-size: 0.9rem;
 }
 
