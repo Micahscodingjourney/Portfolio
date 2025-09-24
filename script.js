@@ -49,8 +49,8 @@ document.querySelector('form').addEventListener('submit', (e) => {
     emailjs.init('gLI2XMXbJeh25qrSY');
 
     const formData = {
-        from_name: document.querySelector('input[type="text"]').value,
-        from_email: document.querySelector('input[type="email"]').value,
+        user_name: document.querySelector('input[type="text"]').value,
+        user_email: document.querySelector('input[type="email"]').value,
         message: document.querySelector('textarea').value,
         to_name: 'Micah'
     };
@@ -62,5 +62,6 @@ document.querySelector('form').addEventListener('submit', (e) => {
         }, (error) => {
             alert('Failed to send message. Please try again or contact me directly.');
             console.error('EmailJS error:', error);
+            console.error('Error details:', error.text || error.message);
         });
 });
