@@ -46,16 +46,16 @@ document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
 
     // Initialize EmailJS with your public key
-    emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+    emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key (found in Account > General)
 
     const formData = {
         from_name: document.querySelector('input[type="text"]').value,
         from_email: document.querySelector('input[type="email"]').value,
         message: document.querySelector('textarea').value,
-        to_name: 'Your Name' // Replace with your name
+        to_name: 'Micah' // Replace with your name
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData) // Replace with your service and template IDs
+    emailjs.send('service_de3zqej', 'YOUR_TEMPLATE_ID', formData) // Replace YOUR_TEMPLATE_ID with your template ID (create a template in EmailJS dashboard)
         .then((response) => {
             alert('Thank you for your message! I will get back to you soon.');
             document.querySelector('form').reset();
