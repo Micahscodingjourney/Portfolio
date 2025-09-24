@@ -41,8 +41,26 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Form submission (placeholder)
+// Form submission with EmailJS
 document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Thank you for your message! (This is a placeholder)');
+
+    // Initialize EmailJS with your public key
+    emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+
+    const formData = {
+        from_name: document.querySelector('input[type="text"]').value,
+        from_email: document.querySelector('input[type="email"]').value,
+        message: document.querySelector('textarea').value,
+        to_name: 'Your Name' // Replace with your name
+    };
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData) // Replace with your service and template IDs
+        .then((response) => {
+            alert('Thank you for your message! I will get back to you soon.');
+            document.querySelector('form').reset();
+        }, (error) => {
+            alert('Failed to send message. Please try again or contact me directly.');
+            console.error('EmailJS error:', error);
+        });
 });
