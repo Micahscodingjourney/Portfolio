@@ -206,9 +206,10 @@ h2::after {
 .portfolio-item img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 1rem;
     border-radius: 0;
+    background-color: #f5f5dc;
 }
 
 .portfolio-item h3 {
