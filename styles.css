@@ -79,7 +79,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(245, 245, 220, 0.7), rgba(245, 245, 220, 0.7)), url('stock-photo-bay-one-kotor-montenegro-566928853.webp');
+    background: linear-gradient(rgba(245, 245, 220, 0.7), rgba(245, 245, 220, 0.7)), url('kotor.webp');
     background-size: cover;
     background-position: center;
     text-align: center;
