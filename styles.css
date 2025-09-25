@@ -74,7 +74,9 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #F5F5DC 0%, #D4EDDA 50%, #C3E6CB 100%);
+    background: linear-gradient(rgba(245, 245, 220, 0.7), rgba(245, 245, 220, 0.7)), url('kotor.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
 }
 
