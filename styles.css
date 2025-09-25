@@ -253,7 +253,8 @@ button[type="submit"]:hover {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #D4EDDA;
+    background-color: #2F4F2F;
+    color: #F5F5DC;
     font-size: 0.9rem;
 }
 
