@@ -169,6 +169,19 @@ h2::after {
 
 .about-text {
     flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-content-left, .about-content-right {
+    flex: 1;
+}
+
+.divider {
+    width: 1px;
+    background-color: #2F4F2F;
+    margin: 0 1rem;
+    opacity: 0.5;
 }
 
 .about-grid {
@@ -333,5 +346,15 @@ footer {
     .profile-img {
         width: 150px;
         height: 150px;
+    }
+
+    .about-text {
+        flex-direction: column;
+    }
+
+    .divider {
+        width: auto;
+        height: 1px;
+        margin: 1rem 0;
     }
 }
