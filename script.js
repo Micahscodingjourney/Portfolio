@@ -55,7 +55,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
         to_name: 'Micah'
     };
 
-    emailjs.send('service_de3zqej', 'template_6h1tat5', formData)
+    emailjs.send('service_a2t7fy4', 'template_6h1tat5', formData)
         .then((response) => {
             alert('Thank you for your message! I will get back to you soon.');
             document.querySelector('form').reset();
