@@ -177,6 +177,10 @@ h2::after {
     flex: 1;
 }
 
+.about-text p {
+    text-align: center;
+}
+
 .divider {
     width: 1px;
     background-color: #2F4F2F;
@@ -186,9 +190,9 @@ h2::after {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .about-item {
